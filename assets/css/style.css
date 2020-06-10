@@ -1,0 +1,91 @@
+/*setting up color*/
+:root {
+    --first-color: rgb(247, 205, 205);
+    --second-color: aqua;
+    --third-color: black;
+    --forth-color: red;
+    --fifth-color: rgb(243, 242, 211);
+    --sixth-color: white;
+        
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--fifth-color);
+    font-family: 'Times New Roman', Helvetica, sans-serif;
+}
+header {
+    padding: 10px 10px;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    background-image: url(../images/banner-header-paper-crumpled.jpg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    position: sticky;
+    top: 0;
+    
+}
+header a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 2vw;
+    color: var(--third-color);
+    
+}
+header nav ul li a:hover {
+    background: var(--first-color);
+    color: var(--forth-color);
+    border-radius: 20px;
+}
+footer {
+    background-color: var(--second-color);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    background-image: url(../images/banner-header-paper-crumpled.jpg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    position: sticky;
+    bottom: 0;
+}
+footer h2 {
+    color: var(--third-color);
+}
+footer a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+section {
+    padding: 150px;
+}
+.part1 {
+    background-image: url(../images/banner-header-paper-crumpled.jpg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
