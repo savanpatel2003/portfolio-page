@@ -1,7 +1,7 @@
 /*setting up color*/
 :root {
     --first-color: rgb(247, 205, 205);
-    --second-color: aqua;
+    --second-color: rgba(217, 223, 223, 0.877);
     --third-color: black;
     --forth-color: red;
     --fifth-color: rgb(243, 242, 211);
@@ -17,6 +17,7 @@ body {
     background-color: var(--fifth-color);
     font-family: 'Times New Roman', Helvetica, sans-serif;
 }
+/*header setting*/
 header {
     padding: 10px 10px;
     background-color: var(--second-color);
@@ -55,6 +56,7 @@ header nav ul li a:hover {
     color: var(--forth-color);
     border-radius: 20px;
 }
+/*footer setting*/
 footer {
     background-color: var(--second-color);
     width: 100%;
@@ -77,9 +79,12 @@ footer a {
     text-decoration: none;
     color: var(--third-color);
 }
+/* sect of backgroudn img and maing brand*/
 section {
-    padding: 150px;
+    padding: 0;
+    margin: 0;
 }
+/* set up background img*/
 .part1 {
     background-image: url(../images/banner-header-paper-crumpled.jpg);
     background-size: cover;
@@ -88,4 +93,43 @@ section {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
+}
+.part21 {
+    
+    margin: 0;
+    padding: 0;
+    height: 250px;
+}
+.part21 {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-column-gap: 10px;
+    background-color: var(--second-color);
+    border: 1px solid var(--third-color);
+}
+.part22 {
+    padding: 5px;    
+    border-right: 1px solid var(--third-color);
+    
+    align-items: flex-end;
+    font-size: 40px;
+}
+.part23 {
+    font-size: 20px;
+}
+.part31 {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-column-gap: 10px;
+    background-color: var(--second-color);
+    border: 1px solid var(--third-color);
+}
+.part32 {
+    padding: 5px;
+    font-size: 40px;
+    width: 228px;
+    display: grid;
+    align-items: flex-end right;
 }
