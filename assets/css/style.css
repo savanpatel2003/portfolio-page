@@ -83,20 +83,21 @@ section {
     padding: 0;
     margin: 0;
 }
-/* set up background img*/
+/* set up grid display*/
 section {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-areas:
     "header header"
     "head2  head2"
-    "sideleft sideright"
-    "sideleft sideright"
-    "sideleft sideright";
+    "head3 head3"
+    "head4 head4"
+    "head5 head5";
 }
+/* set up rules for pic box*/
 .main-container {
-    margin: 5px;
-    padding: 5px;
+    margin: 0;
+    padding: 35px 0 15px 85px;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-area: header;
@@ -104,8 +105,10 @@ section {
     display: grid;  
     grid-auto-columns: ;
     background-color: var(--first-color);
+    background-image: url(../images/cube-background-2484131_1280.webp);
 
 }
+/* add prifle img*/
 .myimg {
     background-image: url(../images/12072644_10154308201513312_76190603846212736_n.jpg);
 
@@ -117,15 +120,78 @@ section {
 }
 .picsub {
     padding: 15px 0;
-    border: 2px solid red;
     display: flex;
     align-items: flex-end;
+    text-align: end;
     justify-content: end;
 }
+.picsub h2 {
+    padding-bottom: 15px;
+    padding-right: 35px;
+    position: absolute;
+    right: 0;
+    color: var(--forth-color);
+    font-size: 60px;
+    font-weight: bold;
+}
+/*this is where my info starts*/
 .myinfo {
     margin: 0;
-    padding: 0;
+    padding: 35px 0 0 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-area: head2;
+   
 }
+.about-me {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.about-me h3 {
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+.history {
+    margin: 0;
+    padding: 10px;
+    border-left: 2px solid black;
+    font-size: 20px;  
+}
+
+
+
+
+
+
+
+
+
+
+
+/* this is my world starts*/
+
+
+
+
+
+
+
+
+
+
+
+/*this is find me starts*/
+
+
+
+
+
+
+
+
+
+
+/*this is contact me start*/
