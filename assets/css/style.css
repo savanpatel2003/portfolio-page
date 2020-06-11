@@ -30,6 +30,7 @@ header {
     background-attachment: fixed;
     position: sticky;
     top: 0;
+    z-index: 9999;
     
 }
 header a {
@@ -179,9 +180,54 @@ section {
     font-size: 50px;
     font-weight: bold;
 }
-.mywork {
+.mywork     {
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-row-gap: 5px;
+    grid-template-areas:
+    "run run run none"
+    "hori hori other none";
+    
+
+    
+    border: 2px solid red;
+}
+.runbuddy {    
+    display: grid;
+    grid-area: run;
+    background-image: url(../images/runbuddy.png);
     
 }
+.run-img {
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 5px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+.horiseon {
+    display: grid;
+    grid-area: hori;
+    border: 2px solid red;
+    background-image: url(../images/horiseon.png);
+   
+}
+.hori-img {
+    width: 100%;
+    min-height: 200px;
+    background-size: cover;
+    display: flex;
+    padding: 5px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
 /*this is find me starts*/
 .findme {
     margin: 0;
