@@ -160,38 +160,70 @@ section {
     border-left: 2px solid black;
     font-size: 20px;  
 }
-
-
-
-
-
-
-
-
-
-
-
 /* this is my world starts*/
 
-
-
-
-
-
-
-
-
-
-
+.myworld {
+    margin: 0;
+    padding: 35px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-area: head3;
+}
+.my-world {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.my-world h3 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.mywork {
+    
+}
 /*this is find me starts*/
+.findme {
+    margin: 0;
+    padding: 35px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-area: head4;
 
+}
+.find-me {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 
+}
+.find-me h3 {
+    font-size: 50px;
+    font-weight: bold;
 
+}
+.locate {
 
-
-
-
-
-
-
+}
 /*this is contact me start*/
+.contact {
+    margin: 0;
+    padding: 35px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-area: head5;
+
+}
+.contact-me {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+.contact-me h3 {
+    font-size: 50px;
+    font-weight: bold;
+
+}
