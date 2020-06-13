@@ -4,7 +4,7 @@
     --second-color: rgba(217, 223, 223, 0.877);
     --third-color: black;
     --forth-color: red;
-    --fifth-color: rgb(243, 242, 211);
+    --fifth-color: rgb(238, 238, 247, 1);
     --sixth-color: white;
         
 }
@@ -15,6 +15,10 @@
 body {
     background-color: var(--fifth-color);
     font-family: 'Times New Roman', Helvetica, sans-serif;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 /*header setting*/
 header {
@@ -23,11 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-    background-image: url(../images/banner-header-paper-crumpled.jpg);
-    background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed;
+    background-color: rgba(49, 52, 61, 1);
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -80,196 +80,261 @@ footer a {
     color: var(--third-color);
 }
 /* sect of backgroudn img and maing brand*/
-section {
-    padding: 0;
-    margin: 0;
-}
-/* set up grid display*/
-section {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas:
-    "header header"
-    "head2  head2"
-    "head3 head3"
-    "head4 head4"
-    "head5 head5";
-}
+   
 /* set up rules for pic box*/
-.main-container {
-    margin: 0;
-    padding: 35px 0 15px 85px;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-area: header;
-    border: 1px solid var(--third-color);
-    display: grid;  
-    grid-auto-columns: ;
+.intro {
+    
     background-color: var(--first-color);
     background-image: url(../images/cube-background-2484131_1280.webp);
-
-}
-/* add prifle img*/
-.myimg {
-    background-image: url(../images/12072644_10154308201513312_76190603846212736_n.jpg);
-
-}
-.profileimg {
-    width: 100%;
-    min-height: 300px;
     background-size: cover;
+    background-position: center;
 }
-.picsub {
-    padding: 15px 0;
+.myinfo {
+    margin: 0;
+    padding: 25px;
+    width: min-content(300px);
     display: flex;
+    justify-content: space-between;
+
+
+}
+.myimg img{
+    height: 300px;
+    width: 200px; 
+
+}
+.myinfo h2 {
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     text-align: end;
     justify-content: end;
-}
-.picsub h2 {
-    padding-bottom: 15px;
-    padding-right: 35px;
-    position: absolute;
-    right: 0;
+    font-size: 70px;
     color: var(--forth-color);
-    font-size: 60px;
-    font-weight: bold;
 }
+
 /*this is where my info starts*/
-.myinfo {
-    margin: 0;
-    padding: 35px 0 0 0;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-area: head2;
-   
-}
-.about-me {
+.intro-2 {
+    margin: 10pxpx 0;
+    padding-top: 100px;
+    padding-right: 2px;
+    padding-left: 2px;
     display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
 }
-.about-me h3 {
+.intro-2 > h2{ 
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 2px solid var(--third-color);
     font-size: 50px;
-    font-weight: bold;
-    
 }
-.history {
-    margin: 0;
-    padding: 10px;
-    border-left: 2px solid black;
-    font-size: 20px;  
+.intro-2 > div { 
+    flex: 0 0 77%;    
+}
+.intro-2 p {
+    margin-bottom: 10px;
+}
+.info2 {
+    border-top: 30px;
+    margin-top: 30px;
 }
 /* this is my world starts*/
+.grid-container {
+    padding: 10px;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(150px, 1fr);
+}
 
-.myworld {
-    margin: 0;
-    padding: 35px 0 0 0;
+.run-buddy {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-area: head3;
+    grid-column: span 3;
+    background-image: url(../images/runbuddy.png); 
 }
-.my-world {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.my-world h3 {
-    font-size: 50px;
-    font-weight: bold;
-}
-.mywork     {
-    margin: 5px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-row-gap: 5px;
-    grid-template-areas:
-    "run run run none"
-    "hori hori other none";
-    
-
-    
-    border: 2px solid red;
-}
-.runbuddy {    
-    display: grid;
-    grid-area: run;
-    background-image: url(../images/runbuddy.png);
-    
+.hori {
+    grid-column: span 2;
+    background-image: url(../images/horiseon.png);
 }
 .run-img {
+    
     width: 100%;
-    min-height: 300px;
+    min-height: 100%;
     background-size: cover;
-    display: flex;
     padding: 5px;
-    align-items: flex-end;
-    position: relative;
-    overflow: hidden;
-}
-.horiseon {
-    display: grid;
-    grid-area: hori;
-    border: 2px solid red;
-    background-image: url(../images/horiseon.png);
-   
 }
 .hori-img {
+    
     width: 100%;
     min-height: 200px;
     background-size: cover;
+    padding: 5px;
+}
+
+.social-grid {
+    
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(150px, 1fr);
+}
+.facebook {
+    background-image: url(../images/facebook.webp);
+}
+.face-img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
     display: flex;
     padding: 5px;
     align-items: flex-end;
+    justify-content: center;
     position: relative;
     overflow: hidden;
 }
-
-/*this is find me starts*/
-.findme {
-    margin: 0;
-    padding: 35px 0 0 0;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-area: head4;
+.snapchat {
+    background-image: url(../images/snapchat.png);
+}
+.snap-img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    padding: 5px;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.insta {
+    background-image: url(../images/instagram.webp);
+}
+.insta-img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    padding: 5px;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    
+}
+.contact address a {
+    font-size: 25px; 
+    font-weight: bold;
+    outline: black;
+    z-index: 1;
 
 }
-.find-me {
-    display: flex;
-    align-items: center;
+.contact address a::before{
+    content: '';
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: blue;
+}
+.contact address a:hover{
+    
+    background: var(--first-color);
+    color: var(--forth-color);
+    border-radius: 20px; 
+}
+@media screen and (max-width: 980px) {
+header {
     text-align: center;
+    justify-content: center;}    
+header h1 {
+    width: 100%;
+    text-align: center;   
+    padding: 5px;}
+header nav {
+    justify-content: center;
+}
+header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;}    
+header nav ul li a {
+    font-size: 20px;}    
+footer h2, footer div {
+    text-align: center;
+    width: 100%;}
+body {
+    margin: 10px;
+    padding: 20px;
+}
+.page-section > h2,
+.page-section > div {
+    flex: 0 0 100%
+}
+.page-section > h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-right: none;
     justify-content: center;
 
 }
-.find-me h3 {
-    font-size: 50px;
-    font-weight: bold;
-
+.my-info > h2,
+.myinfo > div {
+    flex: 0 0 100%;
 }
-.locate {
-
-}
-/*this is contact me start*/
-.contact {
-    margin: 0;
-    padding: 35px 0 0 0;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-area: head5;
-
-}
-.contact-me {
-    display: flex;
-    align-items: center;
+.myinfo h2 {
     text-align: center;
     justify-content: center;
-
 }
-.contact-me h3 {
-    font-size: 50px;
-    font-weight: bold;
 
+.myinfo h2 {
+    padding-right: 50px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: end;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--forth-color);
+}
+.myinfo {
+    position: relative;
+    height: auto;
+}
+.grid-item, .grid-item:first-child{
+    grid-column: 1 / -1;
+}
+.social-item, .social-item:first-child{
+    grid-column: 1 / -1;
+}
+.grid-container {
+    grid-auto-rows: minmax(200px, 1fr);
+}
+.social-grid {
+    grid-auto-rows: minmax(200px, 1fr);
+    justify-content: center;
+}
+.intro-2 {
+    margin: 10px;
+    padding: 10px;
+}
 }
