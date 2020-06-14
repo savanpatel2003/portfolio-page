@@ -80,7 +80,10 @@ footer a {
    
 /* set up rules for pic box*/
 .intro {
-    
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
     background-color: var(--first-color);
     background-image: url(../images/cube-background-2484131_1280.webp);
     background-size: cover;
@@ -89,13 +92,17 @@ footer a {
 .myinfo {
     margin: 0;
     padding: 25px;
-    width: min-content(300px);
+    width: auto;
     display: flex;
     justify-content: space-between;
 }
-.myimg img{
-    height: 300px;
-    width: 200px; 
+.myimg {
+    display: flex;
+    flex-grow: 1;
+}
+.myimg img{ 
+    max-width: 300px;
+    max-height: 400px;
 }
 .myinfo h2 {
     padding-right: 50px;
@@ -305,7 +312,7 @@ body {
 }
 .myinfo {
     position: relative;
-    height: auto;
+    height: 400px;
 }
 .grid-item, .grid-item:first-child{
     grid-column: 1 / -1;
@@ -332,4 +339,31 @@ body {
 .contact address a {
     font-size: 45px;
 }
+.myinfo {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+}
+.myimg {
+    justify-content: center;
+    align-content: center;
+}
+}
+@media screen and (max-width: 320px) {
+.myimg img {
+    height: 300px;
+    width: 200px;
+}
+
+
 }
