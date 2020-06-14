@@ -3,47 +3,46 @@ my working porfolio-page
 
 #My portfolio-page
     in this page you will find all infomation about my self and all my work i have done till today.
-# TAble of contents
--   my navigation menu
--   my profile pic
--   my history
--   my website i created 
--   my social media
--   my contact infomation
+# Table of contents
+-   My navigation menu
+-   My profile pic
+-   My history
+-   My website I created 
+-   My social media
+-   My contact infomation
 
-# usage
--   to give infomation about my self to future emoloyer
+# Usage
+-   To give infomation about myself to future employer
 
-#   credits
--   created by my self
+# Credits
+-   Created by myself, Savankumar Patel
 
-#   infomation
-
-creating web is lots of work and takes so much infomation and knowledge 
-in this web page you will find we tried to apply HTML/CSS 
+# Infomation
  
-# list of rules we apply
--   html5 
--   css style sheet
--   header > in header we included nav , ul , li and a tags.
--   after creating header we created footer for page which is most important part.
-    in footer we included div and a tag . a tag had info about who created this file and copy right infomation
--    next we created body section which we gave name **myinfo** in this section we included my profile pic and subtag for page with H2 tag
--   next we moved on to flex box . using flex property we alined all columns giving them 2 rows.
-in first row we gave heading of infomation which we gave id matching with header navigation menu.
-whih included my info, my work, find me, and contact me.
--   next we included my infomation, and wrote my history to give some basic information to my future employe about my self.
--    next we moved on to next part which was made using display grid property.
-in this part we made grids and in them grids we included background pic of my projects we created.
-- while this seems easy it was really hard to arrange.by using grid-template-area we asssigned area to divs and asked them to span first child to 3. 
--   next we moved on to social media div, in this we agained used grid . and as background imege we taged social media infomation .
--   next we included contact infomation in contact div. and linked them with my phone, email, and few other social page.
--   next we moved on to @media  quory which helps user view my web page in diffent screen. 
--   next we moved on to header and contact tags so we can give them hoover effect. so when user click their mouse it will have visual effect.
+In this web page you will find I applied HTML/CSS 
+ 
+# List of properties applied
+-   Html5 
+-   Css style sheet
+-   Header > in header I included nav , ul , li and a tags.
+-   After creating the header I created the footer for the page which is the most important part.
+    
+    In the footer I included div and a-tag. a-tag has info about who created this file and copyright infomation
+-    Next, I created the body section which I named **myinfo** in this section I included my profile picture and a subtag for the page with H2 tag
+-   Next, I moved on to the flex box . Using the flex property I aligned all columns giving them 2 rows.
+In the first row, the heading of infomation which I gave is matching with header in the navigation menu. I included my info, my work, find me, and contact me.
+-   Next, I included my infomation, and wrote my history to give some basic information to my future employer about myself.
+-    I then moved on to the next part which was made using display grid property.
+In this part I made grids and in the grids I included background picture of the projects I created.
+- While this seems easy it was really hard to arrange. by using grid-template-area I asssigned area to divs and asked them to span first child to 3. 
+-   Next, I moved on to social media div, in this I agained used grid . and as background imege I taged social media infomation .
+-   Next, I included contact infomation in contact div. and linked them with my phone, email, and a few other social media pages.
+-   I moved on to @media  query which helps users view my web page in different screens. 
+-   Lastly, I moved on to the header and contact tags so I can give them the hover effect. When users hover over the link, it will have the visual effect.
 
 
-i m attaching my developed webpage. in next link feel free to checkout my web page
-https://savanpatel2003.github.io/portfolio-page/
+I am attaching my developed webpage. In the next link feel free to checkout my web page!
+-   https://savanpatel2003.github.io/portfolio-page/
 
-in this part you will find my github page where my repositories files of my work 
-https://github.com/savanpatel2003/portfolio-page
+In this page you will find my github page where my repositories files of my work!
+-   https://github.com/savanpatel2003/portfolio-page
